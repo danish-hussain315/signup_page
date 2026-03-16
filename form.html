@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <h1>Sing Up</h1>
+    <p>Your journey starts here – let’s make it amazing together.</p>
+    <form>
+        <h2>Peronal Information</h2>
+        <div class="peronal-information">
+            <div class="info-group">
+                <Label for="first-name" class="required">First Name</Label>
+                <input type="text" id="first-name" placeholder="Enter First Name" required>
+            </div>
+            <div class="info-group">
+                <Label for="last-name">Last Name</Label>
+                <input type="text" id="last-name" placeholder="Enter Second Name">
+            </div>
+        </div>
+        <h2>Contact Information</h2>
+        <div class="peronal-information">
+            <div class="info-group">
+                <Label for="email">Email</Label>
+                <input type="email" id="email" placeholder="danish@gmail.com">
+            </div>
+            <div class="info-group">
+                <Label for="phone">Phone Number</Label>
+                <input type="text" id="phone" inputmode="numeric" pattern="[0-9]*" placeholder="03**********" maxlength="11">
+            </div>
+        </div>
+        <h2>Address </h2>
+        <div class="peronal-information">
+            <textarea name="Address" id="Address" placeholder="Enter full Address"></textarea>
+        </div>
+        
+        <h2>Secure Data</h2>
+        <div class="peronal-information">
+            <div class="info-group">
+                <Label for="cnic">C.N.I.C Number</Label>
+                <input type="text" id="cnic"  placeholder="00000-0000000-0" maxlength="15">
+            </div>
+            <div class="info-group">
+                <Label for="password">Password</Label>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+        </div>
+
+        <h2> Select Course</h2>
+        <div class="peronal-information">
+            <div class="info-group" style="display: flex;  flex-direction: column;  align-items: flex-start; gap: 10px">
+                <span ><input type="checkbox" id="course" value="FSWD"> FSWD </span>
+                <span ><input type="checkbox" id="course" value="ds">Data Science</span>
+                <span ><input type="checkbox" id="course" value="db">Databases</span>
+            </div>
+            
+            <div class="info-group" style="width: 70%; height: 150px; display: flex; flex-direction: column;">
+                <h3>Select CV or profile Picture</h3>
+                <input type="file" accept=".jpg,.png,.pdf"> 
+                
+            </div>
+        </div>
+
+        <h2> Permissions</h2>
+        <div class="peronal-information">
+            <div class="info-group" style="display: flex;  flex-direction: column;  align-items: flex-start; gap: 10px">
+                <span ><input type="radio" name="course" value="FSWD"> Allow </span>
+                <span ><input type="radio" name="course" value="ds">Not Allow</span>
+                <span ><input type="radio" name="course" value="db">Custom</span>
+            </div>
+        </div>
+         <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+<!-- 
+output => compouter , 
+input => data user say lyty  -->
